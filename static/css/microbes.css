@@ -1,0 +1,47 @@
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-brand {
+     color: white;
+     }
+
+.jumbotron.jumbotron-fluid{
+    background-image: url("https://scx1.b-cdn.net/csz/news/800/2017/themillionso.jpg");
+    min-height: 375px;
+    margin-bottom: 0px;
+} 
+
+.jumbotron.jumbotron-fluid h1{
+    color: white;
+    text-align: center;
+}
+
+.jumbotron.jumbotron-fluid p{
+    color: white;
+    text-align: center;
+}
+
+.panel-primary{
+    margin-top: 10px;
+    width: 75%
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: black;
+    color: white;
+
+
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
