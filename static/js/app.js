@@ -25,10 +25,14 @@ function buildMetadata(sample) {
       console.log(`Key: ${key} and Value ${value}`);
       smp.append("div").text(`${key} : ${value}`);
     });
+
+    // BONUS: Build the Gauge Chart
+    console.log("buildGauge1");
+    buildGauge(data.WFREQ);
+
   });
 
-  // BONUS: Build the Gauge Chart
-  // buildGauge(data.WFREQ);
+ 
 }
 
 function buildCharts(sample) {
@@ -61,7 +65,16 @@ function buildCharts(sample) {
   // @TODO: Build a Pie Chart
   // HINT: You will need to use slice() to grab the top 10 sample_values,
   // otu_ids, and labels (10 each).
-  var ultimateColors = ['rgb(56, 75, 126)', 'rgb(18, 36, 37)', 'rgb(34, 53, 101)', 'rgb(36, 55, 57)', 'rgb(6, 4, 4)', 'rgb(177, 127, 38)', 'rgb(205, 152, 36)', 'rgb(99, 79, 37)', 'rgb(129, 180, 179)', 'rgb(124, 103, 37)'];
+  var ultimateColors = ["rgba(0, 255, 0, 0.1)", 
+                "rgba(0, 255, 0, 0.2)", 
+                "rgba(0, 255, 0, 0.3)", 
+                "rgba(0, 255, 0, 0.4)", 
+                "rgba(0, 255, 0, 0.5)", 
+                "rgba(0, 255, 0, 0.6)", 
+                "rgba(0, 255, 0, 0.7)", 
+                "rgba(0, 255, 0, 0.8)", 
+                "rgba(0, 255, 0, 0.9)", 
+                "white"];
   var top10values = sd.sample_values.slice(0,10);
   var top10labels = sd.otu_labels.slice(0,10);
   var top10ids = sd.otu_ids.slice(0,10);
@@ -76,6 +89,7 @@ function buildCharts(sample) {
   var pieData = [trace2];
   console.log("test pie")
   Plotly.newPlot('pie', pieData);
+
 
 });
 
