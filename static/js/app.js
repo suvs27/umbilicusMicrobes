@@ -82,7 +82,18 @@ function buildCharts(sample) {
     labels: top10ids,
     values: top10values,
     hoverinfo: top10labels,
-    marker: {color: ultimateColors},
+    marker: {
+      colors: ["rgba(0, 10, 0, 0.1)",
+          "rgba(0, 50, 0, 0.2)",
+          "rgba(0, 75, 0, 0.3)",
+          "rgba(0, 100, 0, 0.4)",
+          "rgba(0, 125, 0, 0.5)",
+          "rgba(0, 175, 0, 0.6)",
+          "rgba(0, 200, 0, 0.7)",
+          "rgba(0, 225, 0, 0.8)",
+          "rgba(0, 255, 0, 0.9)",
+          "rgba(0, 245, 0, 0.9)"]
+  },
     type: 'pie'
     };
 
